@@ -170,7 +170,7 @@ describe('Cart system test', () => {
 describe('Logout test', () => {
     it('Should be able to logout', () => {
         cy.get('#react-burger-menu-btn').click()
-        cy.get('.bm-menu').should('be.visible')
+        cy.get('.bm-menu-wrap').should('be.visible')
         cy.get('#logout_sidebar_link').click()
     })
 
